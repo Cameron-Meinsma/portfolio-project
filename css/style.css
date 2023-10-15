@@ -1,7 +1,36 @@
 :root {
     --primary-color: #986cc7;
-    --background-color: #ede8f1;
+    --hero-background-color: #ede8f1;
     --off-black-text-color: #323232;
+}
+
+@media (max-width: 767px) {
+    footer a {
+        font-size: 13px !important;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .index-project-text {
+        margin: auto 10px 15px;
+    }
+
+    #index-h1 {
+        margin-top: 100px !important;
+        font-size: 48px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #index-h2-hero {
+        margin: auto 24px;
+        font-size: 15px !important;
+    }
+
+    #index-contact-btn {
+        margin: auto auto 30px !important;
+    }
 }
 
 body {
@@ -10,12 +39,60 @@ body {
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
+
+nav {
+    text-align: center;
+}
+
+footer {
+    padding-top: 25px;
+    background-color: var(--off-black-text-color);
+}
+
+footer h4 {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin: 20px 50px 20px 50px;
+    font-size: 15px;
+}
+
+footer a:hover {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav {
+    background-color: var(--hero-background-color);
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    color: var(--primary-color);
+}
+
+.nav-active {
+    color: #ac79e3;
 }
 
 .hero {
     text-align: center;
     display: block;
-    background-color: var(--background-color);
+    background-color: var(--hero-background-color);
 }
 
 .container {
@@ -61,6 +138,10 @@ body {
     margin-left: 10px;
 }
 
+#index-nav-name {
+    margin-left: 10px;
+}
+
 #index-h1 {
     margin-top: 150px;
     font-size: 60px;
@@ -81,7 +162,8 @@ body {
     padding: 13px 25px;
     border-radius: 40px;
     border: 2.5px solid var(--primary-color);
-    margin: 75px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 #index-contact-btn:hover {
