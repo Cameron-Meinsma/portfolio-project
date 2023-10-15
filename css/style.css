@@ -157,7 +157,7 @@ footer a:hover {
 }
 
 #index-contact-btn {
-    color: #fff;
+    color: var(--hero-background-color);
     background-color: var(--primary-color);
     padding: 13px 25px;
     border-radius: 40px;
@@ -169,7 +169,7 @@ footer a:hover {
 #index-contact-btn:hover {
     transition: all 200ms ease-in-out;
     color: var(--primary-color);
-    background-color: var(--background-color);
+    background-color: var(--hero-background-color);
     border-color: var(--primary-color);
 }
 
