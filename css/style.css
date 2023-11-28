@@ -41,6 +41,10 @@
         margin-bottom: 30px !important;
     }
 
+    .contact-row {
+        font-size: 17px !important;
+    }
+
     #index-contact-btn {
         margin: auto auto 30px !important;
     }
@@ -128,7 +132,7 @@ footer a:hover {
     background-color: var(--hero-background-color);
 }
 
-.about {
+.center-text {
     text-align: center;
 }
 
@@ -203,6 +207,29 @@ footer a:hover {
 
 .nav-name {
     margin-left: 10px;
+}
+
+.contact-row {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact-row a {
+    text-decoration: none;
+    color: var(--off-black-text-color);
+    transition: all 150ms ease-in;
+}
+
+.contact-row a:hover {
+    color: var(--primary-color);
+}
+
+.contact-top {
+    margin-top: 35px;
+}
+
+.contact-bottom {
+    margin-bottom: 75px;
 }
 
 #index-contact-btn {
