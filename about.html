@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About | Cameron Meinsma</title>
+        <meta
+            name="description"
+            content="About Cameron. Cameron is a front-end developer based in Amsterdam, The Netherlands."
+        />
+        <title>About Cameron | Cameron Meinsma</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -21,7 +25,10 @@
     <body>
         <nav class="navbar navbar-expand-lg fixed-top nav">
             <div class="container-fluid">
-                <a class="navbar-brand pl-3 nav-name" href="index.html"
+                <a
+                    class="navbar-brand pl-3 nav-name"
+                    href="index.html"
+                    title="Homepage"
                     >Cameron Meinsma</a
                 >
                 <button
@@ -38,21 +45,37 @@
                 <div class="collapse navbar-collapse pl-3" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="index.html"
+                                title="Homepage"
+                                >Home</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a
                                 class="nav-link nav-active"
-                                aria-current="page"
                                 href="about.html"
+                                title="About Cameron"
                                 >About</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="my-work.html">My Work</a>
+                            <a
+                                class="nav-link"
+                                href="my-work.html"
+                                title="Cameron's work"
+                                >My Work</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a
+                                class="nav-link"
+                                href="contact.html"
+                                title="Contact Cameron"
+                                >Contact</a
+                            >
                         </li>
                     </ul>
                 </div>
@@ -65,7 +88,7 @@
                 <div class="col-12 col-md-6">
                     <img
                         src="media/profile_pic.jpg"
-                        alt="Front facing headshot of myself."
+                        alt="Front facing headshot of myself"
                         class="img-fluid"
                         id="profile-pic"
                     />
@@ -80,7 +103,10 @@
                             longboard.
                         </p>
                     </div>
-                    <a href="my-work.html" class="btn about-projects-btn"
+                    <a
+                        href="my-work.html"
+                        class="btn about-projects-btn"
+                        title="Link to Cameron's work"
                         >Projects</a
                     >
                 </div>
@@ -88,36 +114,59 @@
         </div>
         <footer>
             <h4>Cameron Meinsma</h4>
-            <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="my-work.html">My Work</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a
-                        href="https://www.instagram.com/c.meinsma/"
-                        target="_blank"
-                        ><i class="fa-brands fa-instagram"></i> c.meinsma</a
-                    >
-                    <a href="https://github.com/Cameron-Meinsma" target="_blank"
-                        ><i class="fa-brands fa-github"></i> GitHub</a
-                    >
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <a href="mailto:cameronmeinsma@gmail.com"
-                        ><i class="fa-solid fa-envelope"></i>
-                        cameronmeinsma@gmail.com</a
-                    >
-                    <a
-                        href="https://www.linkedin.com/in/cameron-meinsma"
-                        target="_blank"
-                        ><i class="fa-brands fa-linkedin"></i>
-                        www.linkedin.com/in/cameron-meinsma
-                    </a>
+            <div class="footer-reg-links">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <a href="index.html" title="Homepage">Home</a>
+                        <a href="about.html" title="About Cameron">About</a>
+                        <a href="my-work.html" title="Cameron's work"
+                            >My Work</a
+                        >
+                        <a href="contact.html" title="Contact Cameron"
+                            >Contact</a
+                        >
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <a
+                            href="https://www.instagram.com/c.meinsma/"
+                            target="_blank"
+                            title="Link to Cameron's Instagram"
+                            ><i class="fa-brands fa-instagram"></i> c.meinsma</a
+                        >
+                        <a
+                            href="https://github.com/Cameron-Meinsma"
+                            target="_blank"
+                            title="Link to Cameron's GitHub"
+                            ><i class="fa-brands fa-github"></i> GitHub</a
+                        >
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <a
+                            href="mailto:cameronmeinsma@gmail.com"
+                            title="Mail Cameron"
+                            ><i class="fa-solid fa-envelope"></i>
+                            cameronmeinsma@gmail.com</a
+                        >
+                        <a
+                            href="https://www.linkedin.com/in/cameron-meinsma"
+                            target="_blank"
+                            title="Link to Cameron's LinkedIn"
+                            ><i class="fa-brands fa-linkedin"></i>
+                            www.linkedin.com/in/cameron-meinsma
+                        </a>
+                    </div>
                 </div>
             </div>
+            <p id="footer-end-text">
+                This project is open-sourced on
+                <a
+                    href="https://github.com/Cameron-Meinsma/portfolio-project"
+                    target="_blank"
+                    title="Link to the project on GitHub"
+                    id="footer-github-project"
+                    >GitHub</a
+                >
+            </p>
         </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
